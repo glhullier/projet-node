@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Serveur Express</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bienvenue sur notre site</h1>
+    <div id="login">
+      <h2>Se connecter</h2>
+      <form id="loginForm">
+        <input
+          type="text"
+          id="username"
+          placeholder="Nom d'utilisateur"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Mot de passe"
+          required
+        />
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+    <div id="register">
+      <h2>Créer un compte utilisateur</h2>
+      <form id="registerForm">
+        <input
+          type="text"
+          id="newUsername"
+          placeholder="Nom d'utilisateur"
+          required
+        />
+        <input
+          type="password"
+          id="newPassword"
+          placeholder="Mot de passe"
+          required
+        />
+        <button type="submit">Créer un compte</button>
+      </form>
+    </div>
+    <div id="createArticle">
+      <h2>Créer un article</h2>
+      <form id="articleForm">
+        <input
+          type="text"
+          id="articleName"
+          placeholder="Nom de l'article"
+          required
+        />
+        <input
+          type="text"
+          id="articleCode"
+          placeholder="Code de l'article"
+          required
+        />
+        <textarea
+          id="articleDescription"
+          placeholder="Description"
+          required
+        ></textarea>
+        <input type="file" id="articleImage" required />
+        <input type="number" id="articlePrice" placeholder="Prix" required />
+        <input
+          type="number"
+          id="articleQuantity"
+          placeholder="Quantité"
+          required
+        />
+        <button type="submit">Créer un article</button>
+      </form>
+    </div>
+    <div id="articles">
+      <h2>Articles</h2>
+      <ul id="articleList"></ul>
+    </div>
+    <script src="server.js"></script>
+  </body>
+</html>
