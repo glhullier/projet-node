@@ -1,84 +1,129 @@
 <!DOCTYPE html>
+<!-- Déclare le type de document comme HTML5 -->
 <html lang="fr">
+  <!-- Ouvre l'élément HTML et définit la langue du document comme français -->
   <head>
+    <!-- Ouvre l'élément head contenant les métadonnées du document -->
     <meta charset="UTF-8" />
+    <!-- Définit l'encodage des caractères du document en UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configure la fenêtre d'affichage pour s'adapter à la largeur de l'écran et au niveau de zoom initial -->
     <title>Mon Serveur Express</title>
+    <!-- Définit le titre de la page qui s'affichera dans l'onglet du navigateur -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Lie le document HTML à une feuille de style CSS externe nommée style.css -->
   </head>
+  <!-- Ferme l'élément head -->
   <body>
+    <!-- Ouvre l'élément body contenant le contenu visible de la page -->
     <h1>Bienvenue sur notre site</h1>
+    <!-- Affiche un titre de niveau 1 avec le texte "Bienvenue sur notre site" -->
     <div id="login">
+      <!-- Ouvre une division avec l'identifiant "login" -->
       <h2>Se connecter</h2>
+      <!-- Affiche un titre de niveau 2 avec le texte "Se connecter" -->
       <form id="loginForm">
+        <!-- Ouvre un formulaire avec l'identifiant "loginForm" -->
         <input
           type="text"
           id="username"
           placeholder="Nom d'utilisateur"
           required
         />
+        <!-- Crée un champ de texte pour le nom d'utilisateur avec un espace réservé et le rend obligatoire -->
         <input
           type="password"
           id="password"
           placeholder="Mot de passe"
           required
         />
+        <!-- Crée un champ de mot de passe avec un espace réservé et le rend obligatoire -->
         <button type="submit">Se connecter</button>
+        <!-- Crée un bouton de soumission avec le texte "Se connecter" -->
       </form>
+      <!-- Ferme le formulaire -->
     </div>
+    <!-- Ferme la division "login" -->
     <div id="register">
+      <!-- Ouvre une division avec l'identifiant "register" -->
       <h2>Créer un compte utilisateur</h2>
+      <!-- Affiche un titre de niveau 2 avec le texte "Créer un compte utilisateur" -->
       <form id="registerForm">
+        <!-- Ouvre un formulaire avec l'identifiant "registerForm" -->
         <input
           type="text"
           id="newUsername"
           placeholder="Nom d'utilisateur"
           required
         />
+        <!-- Crée un champ de texte pour le nouveau nom d'utilisateur avec un espace réservé et le rend obligatoire -->
         <input
           type="password"
           id="newPassword"
           placeholder="Mot de passe"
           required
         />
+        <!-- Crée un champ de mot de passe pour le nouveau mot de passe avec un espace réservé et le rend obligatoire -->
         <button type="submit">Créer un compte</button>
+        <!-- Crée un bouton de soumission avec le texte "Créer un compte" -->
       </form>
+      <!-- Ferme le formulaire -->
     </div>
+    <!-- Ferme la division "register" -->
     <div id="createArticle">
+      <!-- Ouvre une division avec l'identifiant "createArticle" -->
       <h2>Créer un article</h2>
+      <!-- Affiche un titre de niveau 2 avec le texte "Créer un article" -->
       <form id="articleForm">
+        <!-- Ouvre un formulaire avec l'identifiant "articleForm" -->
         <input
           type="text"
           id="articleName"
           placeholder="Nom de l'article"
           required
         />
+        <!-- Crée un champ de texte pour le nom de l'article avec un espace réservé et le rend obligatoire -->
         <input
           type="text"
           id="articleCode"
           placeholder="Code de l'article"
           required
         />
+        <!-- Crée un champ de texte pour le code de l'article avec un espace réservé et le rend obligatoire -->
         <textarea
           id="articleDescription"
           placeholder="Description"
           required
         ></textarea>
+        <!-- Crée une zone de texte pour la description de l'article avec un espace réservé et la rend obligatoire -->
         <input type="file" id="articleImage" required />
+        <!-- Crée un champ de fichier pour télécharger une image de l'article et le rend obligatoire -->
         <input type="number" id="articlePrice" placeholder="Prix" required />
+        <!-- Crée un champ numérique pour le prix de l'article avec un espace réservé et le rend obligatoire -->
         <input
           type="number"
           id="articleQuantity"
           placeholder="Quantité"
           required
         />
+        <!-- Crée un champ numérique pour la quantité de l'article avec un espace réservé et le rend obligatoire -->
         <button type="submit">Créer un article</button>
+        <!-- Crée un bouton de soumission avec le texte "Créer un article" -->
       </form>
+      <!-- Ferme le formulaire -->
     </div>
+    <!-- Ferme la division "createArticle" -->
     <div id="articles">
+      <!-- Ouvre une division avec l'identifiant "articles" -->
       <h2>Articles</h2>
+      <!-- Affiche un titre de niveau 2 avec le texte "Articles" -->
       <ul id="articleList"></ul>
+      <!-- Crée une liste non ordonnée avec l'identifiant "articleList" -->
     </div>
+    <!-- Ferme la division "articles" -->
     <script src="server.js"></script>
+    <!-- Lie le document HTML à un fichier JavaScript externe nommé server.js -->
   </body>
+  <!-- Ferme l'élément body -->
 </html>
+<!-- Ferme l'élément HTML -->
